@@ -54,7 +54,7 @@ nicePlot <- function(df, color){
     else if (ncol(df) == 2)
     {
       names(df) <- c("r", "s")
-      d <- ggplot(df, aes(x=r, y=s)) + geom_line(aes(x=r, y=r)) + theme(scale_fill_manual(values = sequential_hcl(l, cl)) )
+      d <- ggplot(df, aes(x=r, y=s)) + geom_line(aes(x=r, y=r)) + theme(scale_fill_manual(values = sequential_hcl(1, cl)) )
     }
     else
     {
